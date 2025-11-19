@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.example</groupId>
+    <artifactId>OpenPdfSig</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <maven.compiler.source>22</maven.compiler.source>
+        <maven.compiler.target>22</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <bouncycastle.version>1.82</bouncycastle.version>
+        <sd-dss.version>6.3</sd-dss.version>
+    </properties>
+
+    <dependencies>
+      <dependency>
+        <groupId>com.github.librepdf</groupId>
+        <artifactId>openpdf</artifactId>
+        <version>2.4.0</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bouncycastle</groupId>
+        <artifactId>bcprov-jdk18on</artifactId>
+        <version>${bouncycastle.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bouncycastle</groupId>
+        <artifactId>bcpkix-jdk18on</artifactId>
+        <version>${bouncycastle.version}</version>
+      </dependency>
+
+      <dependency>
+          <groupId>eu.europa.ec.joinup.sd-dss</groupId>
+          <artifactId>dss-xades</artifactId>
+          <version>${sd-dss.version}</version>
+      </dependency>
+
+      <dependency>
+				<groupId>eu.europa.ec.joinup.sd-dss</groupId>
+				<artifactId>dss-document</artifactId>
+				<version>${sd-dss.version}</version>
+			</dependency>
+
+      <dependency>
+          <groupId>eu.europa.ec.joinup.sd-dss</groupId>
+          <artifactId>dss-pades</artifactId>
+          <version>${sd-dss.version}</version>
+      </dependency>
+
+      <dependency>
+          <groupId>eu.europa.ec.joinup.sd-dss</groupId>
+          <artifactId>dss-validation</artifactId>
+          <version>${sd-dss.version}</version>
+      </dependency>
+
+      <dependency>
+          <groupId>eu.europa.ec.joinup.sd-dss</groupId>
+          <artifactId>dss-pades-pdfbox</artifactId>
+          <version>${sd-dss.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>eu.europa.ec.joinup.sd-dss</groupId>
+        <artifactId>dss-utils-apache-commons</artifactId>
+        <version>${sd-dss.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>eu.europa.ec.joinup.sd-dss</groupId>
+        <artifactId>dss-crl-parser-stream</artifactId>
+        <version>${sd-dss.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>eu.europa.ec.joinup.sd-dss</groupId>
+        <artifactId>dss-tsl-validation</artifactId>
+        <version>${sd-dss.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>eu.europa.ec.joinup.sd-dss</groupId>
+        <artifactId>dss-spi</artifactId>
+        <version>${sd-dss.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>eu.europa.ec.joinup.sd-dss</groupId>
+        <artifactId>dss-service</artifactId>
+        <version>${sd-dss.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>eu.europa.ec.joinup.sd-dss</groupId>
+        <artifactId>dss-cms-stream</artifactId>
+        <version>${sd-dss.version}</version>
+      </dependency>
+      
+    </dependencies>
+</project>
