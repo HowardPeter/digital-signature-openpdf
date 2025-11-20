@@ -153,6 +153,5 @@ public class Main {
     appearance.close(dic2); // ghi chữ ký vào PDF và đóng
 
     System.out.println("PDF signed successfully: " + dest);
-
   }
 }
